@@ -100,11 +100,11 @@
 
     // Close any
     $( controller.events ).on( 'opened', function () {
-        $( '[canvas="container"]' ).addClass( 'js-close-any-slidebar' );
+        $( '[canvas="mobile-container"]' ).addClass( 'js-close-any-slidebar' );
     } );
 
     $( controller.events ).on( 'closed', function () {
-        $( '[canvas="container"]' ).removeClass( 'js-close-any-slidebar' );
+        $( '[canvas="mobile-container"]' ).removeClass( 'js-close-any-slidebar' );
     } );
 
     $( 'body' ).on( 'click', '.js-close-any-slidebar', function ( event ) {
