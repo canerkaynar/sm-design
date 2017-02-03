@@ -2,26 +2,6 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-.clearfix:after {
-    content:" ";
-    display:table;
-    clear:both;
-}
-.clearfix:after {
-     visibility: hidden;
-     display: block;
-     font-size: 0;
-     content: " ";
-     clear: both;
-     height: 0;
-     }
-.clearfix { display: inline-block; }
-/* start commented backslash hack \*/
-* html .clearfix { height: 1%; }
-.clearfix { display: block; }
-/* close commented backslash hack */
-
-
 nav[canvas] {
   position: fixed;
   top: 0;
@@ -42,6 +22,10 @@ nav[canvas] {
     height: calc( 100% - 60px );
 }
 
+.site-body {
+    overflow-y: hidden;
+}
+
 .mobile-header {
 
 }
@@ -52,6 +36,7 @@ nav[canvas] {
     padding: 0 10px;
     text-align: center;
     background-color: #ea1b23;
+    height: 60px;
 }
 
 .mobile-header__hamburger {
@@ -63,6 +48,8 @@ nav[canvas] {
     color: white;
     line-height: 60px;
     text-align: left;
+    position: absolute;
+    left: 10px;
 }
 
 .mobile-header__image-wrapper {
@@ -82,6 +69,8 @@ nav[canvas] {
     line-height: 60px;
     text-align: right;
     color: white;
+    position: absolute;
+    right: 10px;
 }
 
 .mobile-header__user-wrapper {
@@ -94,6 +83,8 @@ nav[canvas] {
     line-height: 60px;
     text-align: right;
     color: white;
+    position: absolute;
+    right: 40px;
 }
 
 [off-canvas] {
@@ -128,7 +119,7 @@ nav[canvas] {
 .mobile-menu-list__link:hover {
     color: white;
     text-decoration: none;
-    background-color: #eb474d;
+    background-color: #d61921;
 
 }
 
@@ -177,6 +168,56 @@ nav[canvas] {
     opacity: 0;
 }
 
+.glyphicon-chevron-left  {
+    transform: translateY(-50%);
+    left: 40%;
+}
+
+.glyphicon-chevron-right {
+    transform: translateY(-50%);
+    right: 40%;
+}
+
 .carousel-control:hover {
     opacity: 0.5;
+}
+
+.carousel-image {
+    margin: 0 auto;
+}
+
+.main-banner {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.main-banner__image {
+    margin: 0 auto;
+}
+
+.main-banner__text {
+    display: block;
+    padding: 10px 5px;
+}
+
+.main-banner__button {
+    display: block;
+    background-color: #ea1b23;
+}
+
+.main-banner__link {
+    padding: 0 15px;
+    line-height: 35px;
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.main-banner__link-text {
+    float: left;
+}
+
+.main-banner__icon {
+    line-height: 35px;
+    float: right;
 }
