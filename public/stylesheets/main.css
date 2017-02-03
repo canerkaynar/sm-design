@@ -164,3 +164,19 @@ nav[canvas] {
 .mobile-search__input:focus {
     outline: none;
 }
+
+.carousel-control.right {
+    background-image: none;
+}
+
+.carousel-control.left {
+    background-image: none;
+}
+
+.carousel-control {
+    opacity: 0;
+}
+
+.carousel-control:hover {
+    opacity: 0.5;
+}

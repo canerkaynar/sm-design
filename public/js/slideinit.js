@@ -199,4 +199,6 @@
             console.log( 'Toggle callback' );
         } );
     } );
+
+    $('.carousel').carousel();
 } ) ( jQuery );
