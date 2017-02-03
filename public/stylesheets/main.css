@@ -141,6 +141,7 @@ nav[canvas] {
 }
 
 .mobile-search__ {
+    border-right: 0;
     font-size: 12px;
     height: 32px;
     line-height: 32px;
