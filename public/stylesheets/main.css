@@ -119,13 +119,25 @@ nav[canvas] {
 .mobile-menu-list__link:hover {
     color: white;
     text-decoration: none;
-    background-color: #d61921;
+    background-color: #9d0a0e;
 
+}
+
+.mobile-menu-list__link:focus {
+    outline: none;
 }
 
 
 .mobile-search {
     padding: 10px;
+    position: relative;
+}
+
+.mobile-search__icon {
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .mobile-search__input {
@@ -198,11 +210,20 @@ nav[canvas] {
 .main-banner__text {
     display: block;
     padding: 10px 5px;
+    font-weight: bold;
 }
 
 .main-banner__button {
     display: block;
     background-color: #ea1b23;
+}
+
+.main-banner__button:hover {
+    background-color: #9d0a0e;
+}
+
+.main-banner__button:focus {
+    outline: none;
 }
 
 .main-banner__link {
@@ -213,11 +234,21 @@ nav[canvas] {
     display: block;
 }
 
+.main-banner__link:hover {
+    text-decoration: none;
+    color: white;
+}
+
 .main-banner__link-text {
     float: left;
+    font-weight: bold;
 }
 
 .main-banner__icon {
     line-height: 35px;
     float: right;
+}
+
+.main-banner__img-link {
+    cursor: pointer;
 }
